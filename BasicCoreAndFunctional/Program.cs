@@ -14,7 +14,7 @@ namespace BasicCoreAndFunctional
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To get Quotient and Remainder\n" + "Enter 7: Swap  2 number\n" + "Enter 8: To exit\n");
+                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To get Quotient and Remainder\n" + "Enter 7: Swap  2 number\n" + "Enter 8: To check Even odd\n" + "Enter 9: To exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -47,6 +47,10 @@ namespace BasicCoreAndFunctional
                         swapNumber.Swap();
                         break;
                     case 8:
+                        EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.CheckEvenOdd();
+                        break;
+                    case 9:
                         flag = false;
                         break;
 
