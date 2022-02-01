@@ -14,7 +14,7 @@ namespace BasicCoreAndFunctional
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To exit\n");
+                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -31,6 +31,10 @@ namespace BasicCoreAndFunctional
                         powerOf2.Power2();
                         break;
                     case 4:
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.Harmonic();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
