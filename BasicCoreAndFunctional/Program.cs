@@ -14,7 +14,7 @@ namespace BasicCoreAndFunctional
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To exit\n");
+                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To get Quotient and Remainder\n" + "Enter 7: To exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +39,10 @@ namespace BasicCoreAndFunctional
                         factors.Factor();
                         break;
                     case 6:
+                        QuotientRemainder quotientRemainder = new QuotientRemainder();
+                        quotientRemainder.ComputeQuotientRemainder();
+                        break;
+                    case 7:
                         flag = false;
                         break;
 
