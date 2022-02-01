@@ -14,7 +14,7 @@ namespace BasicCoreAndFunctional
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To get Quotient and Remainder\n" + "Enter 7: Swap  2 number\n" + "Enter 8: To check Even odd\n" + "Enter 9: To check Vowel or Consonant\n" + "Enter 10: To exit\n");
+                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To power of 2\n" + "Enter 4: To generate harmonic series\n" + "Enter 5: To get Factors\n" + "Enter 6: To get Quotient and Remainder\n" + "Enter 7: Swap  2 number\n" + "Enter 8: To check Even odd\n" + "Enter 9: To check Vowel or Consonant\n" + "Enter 10: TO get largest among 3 numbers\n" + "Enter 11: To exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -55,7 +55,14 @@ namespace BasicCoreAndFunctional
                         vowelConsonant.CheckVowelConsonant();
                         break;
                     case 10:
+                        LargestOf3Number largestOf3Number = new LargestOf3Number();
+                        largestOf3Number.LargestNumber();
+                        break;
+                    case 11:
                         flag = false;
+                        break;
+                    default:
+                        Console.WriteLine("Please enter the correct option\n");
                         break;
 
                 }

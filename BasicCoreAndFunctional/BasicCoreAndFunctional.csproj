@@ -47,6 +47,7 @@
     <Compile Include="Factors.cs" />
     <Compile Include="FlipCoin.cs" />
     <Compile Include="HarmonicNumber.cs" />
+    <Compile Include="LargestOf3Number.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="QuotientRemainder.cs" />
     <Compile Include="PowerOf2.cs" />
