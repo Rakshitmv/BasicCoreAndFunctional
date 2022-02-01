@@ -14,7 +14,7 @@ namespace BasicCoreAndFunctional
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 to Flip a Coin\n" + "Enter 2 to exit\n");
+                Console.WriteLine("Enter 1: To Flip a Coin\n" + "Enter 2: To Check For leap Year\n" + "Enter 3: To exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -23,6 +23,10 @@ namespace BasicCoreAndFunctional
                         flipCoin.Toss();
                         break;
                     case 2:
+                        LeapYear leapYear = new LeapYear();
+                        leapYear.Leap();
+                        break;
+                    case 3:
                         flag = false;
                         break;
 
